@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ app.request.locale }}">
+<head>
+    <title>Exported Tasks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background-color: #eee;
+            padding: 20px;
+        }
+
+        .table {
+            border-collapse: collapse;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+        .table tbody tr:nth-child(odd) {
+            background-color: rgba(100, 150, 250, 0.05);
+        }
+
+        .table td,
+        th {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="container" style="text-align: center;">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Time Spent</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for task in tasks %}
+            <tr>
+                <td>{{ task.title }}</td>
+                <td>{{ task.description }}</td>
+                <td>{{ task.timeSpent }}</td>
+            </tr>
+        {% endfor %}
+        <tr>
+            <td></td>
+            <td>Total time spent: </td>
+            <td>{{ hours }} hours and {{ minutes }} minutes</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

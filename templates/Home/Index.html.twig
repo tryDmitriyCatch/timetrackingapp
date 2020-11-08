@@ -1,0 +1,15 @@
+{% extends "Layouts/WebLayout/WebLayoutEncore.html.twig" %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('web') }}
+{% endblock %}
+
+{% block bottom_javascripts %}
+    <script>
+        let csrf_token = {
+            'token': '{{ csrf_token('authenticate')}}',
+            'userId': '153'
+        };
+    </script>
+    {{ encore_entry_script_tags('web') }}
+{% endblock %}

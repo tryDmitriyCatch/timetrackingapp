@@ -1,0 +1,275 @@
+/**************************************
+LOGIN FORM
+**************************************/
+
+#login__container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 700px;
+}
+
+#form__container {
+  text-align: center;
+  background-color: #f0efed;
+  padding: 5% 10%;
+}
+
+#form__container h4 {
+  margin-bottom: 2em;
+}
+
+.success__container {
+  display: block;
+  padding: 10px;
+  background-color: #5cb85c;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.error__container {
+  display: block;
+  padding: 10px;
+  background-color: #d9534f;
+  color: white;
+  margin-bottom: 20px;
+}
+
+p.lead {
+  margin-bottom: 0;
+}
+
+.form__content input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  background-color: #fff!important;
+  margin-bottom: 10px;
+}
+
+.contact_form__error {
+  color: indianred;
+  margin: 20px 0;
+}
+
+button.login--button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #5eb5e0;
+  color: white;
+  border-radius: 20px;
+}
+
+/**************************************
+TEMPLATE STYLES
+**************************************/
+
+body {
+  font-size: .875rem;
+  overflow-x: hidden;
+}
+
+
+.image--container {
+  text-align: center;
+  padding: 10%;
+}
+
+.image--container img {
+  width: 30%;
+  height: auto;
+  margin-top: 5em;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/**************************************
+NAVIGATION
+**************************************/
+
+header {
+  display: flex;
+  margin-top: 50px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 10%;
+  background-color: #24252a;
+}
+
+.navigation--header {
+  background-color: transparent;
+}
+
+a.login__button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+  padding: 10px 40px;
+}
+
+.login__button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.login__button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+.inner--navigation {
+  margin: 30px 10%;
+}
+
+.inner--navigation nav a {
+  text-decoration: none;
+}
+
+/**************************************
+HOMEPAGE
+**************************************/
+
+.hero__section img {
+  width: 100%;
+}
+
+.intro__section {
+  margin-top: 10%;
+}
+
+#homepage{
+  padding: 0 10%;
+  font-family: 'Montserrat', serif;
+}
+
+#homepage .desc a{
+  text-align: center;
+  margin: auto;
+  display: inline-block;
+}
+
+#homepage h1 {
+  font-weight: 900;
+}
+
+#homepage .desc {
+  position: relative;
+  top: 100px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 991px) {
+  .hero__section {
+    text-align: center;
+  }
+
+  .hero__section img {
+    width: 60%;
+  }
+
+  .intro__section {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  #homepage .desc {
+    position: inherit;
+    top: 0;
+    text-align: center;
+  }
+}
+
+/**************************************
+TASK FORM
+***************************************/
+
+#task--form--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 700px;
+}
+
+#task--form--container--inner h4 {
+  margin-bottom: 30px;
+}
+
+#task--form--container--inner {
+  text-align: center;
+  padding: 5% 10%;
+}
+
+input#title, input#description, input#timeSpent {
+  margin-bottom: 20px;
+}
+
+/**********************************************
+TABLE
+***********************************************/
+
+#table--container {
+  margin-top: 3%;
+}
+
+/**************************************
+EXPORT FORM
+***************************************/
+
+#export--form--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 700px;
+}
+
+#export--form--container--inner h4 {
+  margin-bottom: 30px;
+}
+
+#export--form--container--inner {
+  text-align: center;
+  padding: 0 10%;
+}
+
+#export--form--container--inner img {
+  width: 80%;
+}
+
+.export--type--input {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 20px 0;
+  box-shadow: 0 0 20px -5px #CCCCCC;
+}
+
+.export--type--input:hover {
+  cursor: pointer;
+}
+
+.export--type--input--clicked {
+  border-radius: 20px;
+  padding: 20px 0;
+  border: 5px solid #5eb5e0;
+  box-shadow: 0 0 20px -5px #CCCCCC;
+}
+
+#export--type--group {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+input#title, input#description, input#timeSpent {
+  margin-bottom: 20px;
+}
