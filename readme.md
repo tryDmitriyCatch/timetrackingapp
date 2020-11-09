@@ -57,11 +57,15 @@ bin/console server:start
 yarn watch --dev
 ```
 
+### P.S
+
+Make sure that your local url matches one in .env-front file
+
 ### Enjoy!
 
 ## Usage
 
-Since we ran our fixtures command, we will now be able to login using one of following credentials:
+Since we ran our fixtures command, there are couple of users available for us.
 
-User: user(1 through 10)@test.com
+User: user2@test.com
 Password: test
